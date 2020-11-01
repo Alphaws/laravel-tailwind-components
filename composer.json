@@ -1,0 +1,56 @@
+{
+    "name": "Alphaws/laravel-tailwind-components",
+    "description": "Blade components to build forms with Tailwind CSS Custom Forms and Bootstrap 4.",
+    "keywords": [
+        "alphaws",
+        "prstart",
+        "tailwind",
+        "tailwindcss",
+        "laravel"
+    ],
+    "homepage": "https://github.com/Alphaws/laravel-tailwind-components",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Imre Szeness",
+            "email": "imre@prstart.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/support": "^7.22.4 || ^8.0"
+    },
+    "require-dev": {
+        "livewire/livewire": "^1.3.2 || ^2.0",
+        "orchestra/testbench-browser-kit": "^5.1 || ^6.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alphaws\\LaravelTailwindComponents\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alphaws\\LaravelTailwindComponents\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alphaws\\LaravelTailwindComponents\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
